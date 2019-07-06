@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher:
+  clipboard_manager:
+  flushbar:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,3 +41,4 @@ flutter:
     - family: Pacifico
       fonts:
         - asset: fonts/Pacifico-Regular.ttf
+

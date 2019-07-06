@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(myApp());
@@ -53,61 +54,65 @@ class myApp extends StatelessWidget {
                 color: Colors.white,
                 alignment: Alignment(0.0, 0.0),
               ),
-              Container(
-                margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
-                height: 50,
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      '610-322-8160',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 15,
+              GestureDetector(
+                onTap: () => launch("tel://6103228160"),
+                child: Container(
+                  margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
+                  height: 50,
+                  color: Colors.white,
+                  child: Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Icon(
+                        Icons.phone,
                         color: Colors.teal,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        '610-322-8160',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.teal,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-                alignment: Alignment(0.0, 0.0),
               ),
-              Container(
-                margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
-                height: 50,
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      'michaelkosmicki@yahoo.com',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 15,
+              GestureDetector(
+                onTap: () => launch("michaelkosmicki@yahoo.com"),
+                child: Container(
+                  margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
+                  height: 50,
+                  color: Colors.white,
+                  child: Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Icon(
+                        Icons.email,
                         color: Colors.teal,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'michaelkosmicki@yahoo.com',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.teal,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-                alignment: Alignment(0.0, 0.0),
               ),
             ],
           ),
