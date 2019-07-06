@@ -57,12 +57,27 @@ class myApp extends StatelessWidget {
                 margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
                 height: 50,
                 color: Colors.white,
-                child: Text(
-                  '610-322-8160',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.teal,
-                  ),
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      '610-322-8160',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.teal,
+                      ),
+                    ),
+                  ],
                 ),
                 alignment: Alignment(0.0, 0.0),
               ),
@@ -70,12 +85,27 @@ class myApp extends StatelessWidget {
                 margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
                 height: 50,
                 color: Colors.white,
-                child: Text(
-                  'michaelkosmicki@yahoo.com',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.teal,
-                  ),
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      'michaelkosmicki@yahoo.com',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.teal,
+                      ),
+                    ),
+                  ],
                 ),
                 alignment: Alignment(0.0, 0.0),
               ),
