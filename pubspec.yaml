@@ -33,3 +33,8 @@ flutter:
 
   assets:
     - images/michael.png
+
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: fonts/Pacifico-Regular.ttf

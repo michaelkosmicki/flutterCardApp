@@ -21,12 +21,13 @@ class myApp extends StatelessWidget {
                 backgroundImage: AssetImage('images/michael.png'),
               ),
               Container(
-                height: 30,
+                height: 45,
                 margin: EdgeInsets.fromLTRB(40, 10, 40, 0),
                 child: Text(
                   'Michael Kosmicki',
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontFamily: 'Pacifico',
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
