@@ -14,7 +14,7 @@ class myApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 230,
+                height: 210,
               ),
               CircleAvatar(
                 radius: 60,
@@ -73,7 +73,7 @@ class myApp extends StatelessWidget {
                       '610-322-8160',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 15,
                         color: Colors.teal,
                       ),
                     ),
@@ -101,7 +101,7 @@ class myApp extends StatelessWidget {
                       'michaelkosmicki@yahoo.com',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 15,
                         color: Colors.teal,
                       ),
                     ),
