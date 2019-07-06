@@ -10,7 +10,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueAccent,
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -29,7 +29,7 @@ class myApp extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Pacifico',
-                    fontSize: 25.0,
+                    fontSize: 27.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -67,7 +67,7 @@ class myApp extends StatelessWidget {
                       ),
                       Icon(
                         Icons.phone,
-                        color: Colors.teal,
+                        color: Colors.blueAccent,
                       ),
                       SizedBox(
                         width: 20,
@@ -77,7 +77,7 @@ class myApp extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 15,
-                          color: Colors.teal,
+                          color: Colors.blueAccent,
                         ),
                       ),
                     ],
@@ -97,7 +97,7 @@ class myApp extends StatelessWidget {
                       ),
                       Icon(
                         Icons.email,
-                        color: Colors.teal,
+                        color: Colors.blueAccent,
                       ),
                       SizedBox(
                         width: 20,
@@ -107,7 +107,7 @@ class myApp extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 15,
-                          color: Colors.teal,
+                          color: Colors.blueAccent,
                         ),
                       ),
                     ],
