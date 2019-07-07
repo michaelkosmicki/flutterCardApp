@@ -29,7 +29,7 @@ class myApp extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Pacifico',
-                    fontSize: 27.0,
+                    fontSize: 29.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -43,74 +43,81 @@ class myApp extends StatelessWidget {
                   'Flutter Developer',
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 18,
                     color: Colors.white,
                   ),
                 ),
                 alignment: Alignment(0.0, 0.0),
               ),
               Container(
-                margin: EdgeInsets.fromLTRB(160, 0, 160, 20),
+                margin: EdgeInsets.fromLTRB(160, 8, 160, 20),
                 height: 1,
                 color: Colors.white,
                 alignment: Alignment(0.0, 0.0),
               ),
-              GestureDetector(
-                onTap: () => launch("tel://6103228160"),
-                child: Container(
-                  margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
-                  height: 50,
-                  color: Colors.white,
-                  child: Row(
-                    children: <Widget>[
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Icon(
-                        Icons.phone,
-                        color: Colors.blueAccent,
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        '610-322-8160',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 15,
+              InkWell(
+                splashColor: Colors.red.withAlpha(50),
+                onTap: () {
+                  launch(("tel://6103228160"));
+                },
+                child: Card(
+                  child: Container(
+                    margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
+                    height: 50,
+                    width: 250,
+                    color: Colors.white,
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.phone,
                           color: Colors.blueAccent,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          width: 18,
+                        ),
+                        Text(
+                          '610-322-8160',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.blueAccent,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-              GestureDetector(
-                onTap: () => launch("michaelkosmicki@yahoo.com"),
-                child: Container(
-                  margin: EdgeInsets.fromLTRB(40, 0, 40, 15),
-                  height: 50,
-                  color: Colors.white,
-                  child: Row(
-                    children: <Widget>[
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Icon(
-                        Icons.email,
-                        color: Colors.blueAccent,
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        'michaelkosmicki@yahoo.com',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 15,
+              InkWell(
+                splashColor: Colors.red.withAlpha(50),
+                onTap: () {
+                  launch(("mailto:michaelkosmicki@yahoo.com"));
+                },
+                child: Card(
+                  child: Container(
+                    margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
+                    height: 50,
+                    width: 250,
+                    color: Colors.white,
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.email,
                           color: Colors.blueAccent,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          width: 18,
+                        ),
+                        Text(
+                          'michaelkosmicki@yahoo.com',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.blueAccent,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
