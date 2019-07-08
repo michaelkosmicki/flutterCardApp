@@ -56,67 +56,47 @@ class myApp extends StatelessWidget {
                 alignment: Alignment(0.0, 0.0),
               ),
               InkWell(
-                splashColor: Colors.red.withAlpha(50),
+                splashColor: Colors.red.withAlpha(1),
                 onTap: () {
                   launch(("tel://6103228160"));
                 },
                 child: Card(
-                  child: Container(
-                    margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
-                    height: 50,
-                    width: 250,
-                    color: Colors.white,
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.phone,
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone_iphone,
+                      color: Colors.blueAccent,
+                    ),
+                    title: Text(
+                      '610-322-8160',
+                      style: TextStyle(
+                          fontSize: 20.0,
                           color: Colors.blueAccent,
-                        ),
-                        SizedBox(
-                          width: 18,
-                        ),
-                        Text(
-                          '610-322-8160',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.blueAccent,
-                          ),
-                        ),
-                      ],
+                          fontFamily: 'Source Sans Pro'),
                     ),
                   ),
                 ),
               ),
               InkWell(
-                splashColor: Colors.red.withAlpha(50),
+                splashColor: Colors.red.withAlpha(1),
                 onTap: () {
                   launch(("mailto:michaelkosmicki@yahoo.com"));
                 },
                 child: Card(
-                  child: Container(
-                    margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
-                    height: 50,
-                    width: 250,
-                    color: Colors.white,
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.email,
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.blueAccent,
+                    ),
+                    title: Text(
+                      'michaelkosmicki@yahoo.com',
+                      style: TextStyle(
+                          fontSize: 20.0,
                           color: Colors.blueAccent,
-                        ),
-                        SizedBox(
-                          width: 18,
-                        ),
-                        Text(
-                          'michaelkosmicki@yahoo.com',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.blueAccent,
-                          ),
-                        ),
-                      ],
+                          fontFamily: 'Source Sans Pro'),
                     ),
                   ),
                 ),
